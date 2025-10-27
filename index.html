@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JASA BUG WHATSAPP - Yonz Store Official</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      /* Latar Belakang: Hitam ke Merah Gelap */
+      background: linear-gradient(to bottom, #2a0000, #000);
+      font-family: 'Share Tech Mono', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 420px;
+      padding: 20px;
+      text-align: center;
+      color: #ff3c00; /* Warna Teks Utama: Merah Neon */
+    }
+
+    .hidden { display: none; }
+    .fade-in { animation: fadeIn 0.4s forwards; }
+    .fade-out { animation: fadeOut 0.4s forwards; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeOut {
+      from { opacity: 1; transform: translateY(0); }
+      to   { opacity: 0; transform: translateY(-20px); }
+    }
+
+    h1 {
+      font-size: 1.8em;
+      margin: 15px 0;
+      white-space: nowrap;
+      overflow: hidden;
+      width: fit-content;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* Animasi Typing untuk Judul Utama */
+    #homePage h1 {
+        animation: typing 3s steps(28, end) forwards, blink-caret 0.75s step-end 3;
+        border-right: 2px solid rgba(255,255,255,0.75);
+        width: 14em; 
+    }
+    
+    #servicePage h1 {
+        animation: none;
+        border-right: none;
+        width: 100%;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: rgba(255,255,255,0.75); }
+    }
+
+    .thumbnail {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      box-shadow: 0 0 25px #ff3c00; 
+      margin: 0 auto 20px auto;
+      display: block;
+    }
+    
+    .subtitle {
+        color: white;
+        font-size: 1.1em;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+
+    .button, .back-btn, .music-button {
+      background-color: #ff3c00;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 0 10px #ff3c00;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: transform 0.3s ease;
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .button:hover, .back-btn:hover, .music-button:hover {
+      transform: scale(1.05);
+    }
+
+    .back-btn { margin-top: 30px; }
+
+    /* Gaya untuk Tabel Jasa */
+    .service-table {
+        width: 100%;
+        max-width: 350px;
+        margin: 20px auto;
+        border-collapse: collapse;
+        border: 2px solid #ff3c00;
+        box-shadow: 0 0 15px #ff3c00;
+        background: rgba(42, 0, 0, 0.8);
+    }
+    .service-table th, .service-table td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ff3c00;
+        color: white;
+    }
+    .service-table th {
+        background-color: #ff3c00;
+        color: #000;
+        text-align: center;
+        border-bottom: 2px solid #ff3c00;
+    }
+    .service-table td:last-child {
+        text-align: right;
+        color: #fff;
+        font-weight: bold;
+    }
+    .service-table tr:hover {
+        background-color: rgba(255, 60, 0, 0.1);
+    }
+    
+    /* Tombol Kontak WA */
+    .contact-button {
+        background-color: #00a85a; /* Warna Hijau WA */
+        box-shadow: 0 0 10px #00a85a;
+        margin-bottom: 20px;
+    }
+    .contact-button:hover {
+        background-color: #008c49;
+        transform: scale(1.05);
+    }
+
+  </style>
+</head>
+<body>
+  <audio id="backgroundMusic" loop>
+    <source src="https://files.catbox.moe/3bbg7u.mp3" type="audio/mp3">
+    Browser Anda tidak mendukung elemen audio.
+  </audio>
+
+  <div class="wrapper">
+    <div id="homePage">
+      <img src="https://files.catbox.moe/462kgd.jpg" alt="Logo Jasa Bug" class="thumbnail" />
+      <h1>JASA BUG WHATSAPP</h1>
+      <p class="subtitle">⚙️YONZ STORE OFFICIAL⚙️</p>
+      
+      <table class="service-table">
+          <thead>
+              <tr>
+                  <th>Jasa Bug WhatsApp</th>
+                  <th>Harga</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Force Close</td>
+                  <td>Rp 2.000</td>
+              </tr>
+              <tr>
+                  <td>Crash</td>
+                  <td>Rp 2.000</td>
+              </tr>
+              <tr>
+                  <td>Crash UI Sistem</td>
+                  <td>Rp 5.000</td>
+              </tr>
+              <tr>
+                  <td>Crash iOS iPhone</td>
+                  <td>Rp 5.000</td>
+              </tr>
+              <tr>
+                  <td>Santet Nomor</td>
+                  <td>Rp 3.000</td>
+              </tr>
+              <tr>
+                  <td>Delay Hard</td>
+                  <td>Rp 3.000</td>
+              </tr>
+              <tr>
+                  <td>Invisible Hard</td>
+                  <td>Rp 4.000</td>
+              </tr>
+          </tbody>
+      </table>
+      
+      <button class="music-button" id="musicButton" onclick="toggleMusic()">▶ PLAY MUSIC</button>
+      
+      <button class="button contact-button" onclick="window.location.href='https://wa.me/6281210560845?text=*bang+mau+beli+jasa+bug+bang+hehe.*'">
+        KONTAK & ORDER SEKARANG
+      </button>
+
+    </div>
+
+    <div id="servicePage" class="hidden">
+      </div>
+  </div>
+
+  <script>
+    const backgroundMusic = document.getElementById('backgroundMusic');
+    const musicButton = document.getElementById('musicButton');
+    let isPlaying = false;
+
+    // Fungsi untuk mengontrol musik (Play/Pause)
+    function toggleMusic() {
+        if (isPlaying) {
+            backgroundMusic.pause();
+            musicButton.innerHTML = "▶ PLAY MUSIC";
+        } else {
+            backgroundMusic.play().catch(error => {
+                console.log("Autoplay dicegah. Klik lagi untuk memutar.");
+            });
+            musicButton.innerHTML = "⏸ PAUSE MUSIC";
+        }
+        isPlaying = !isPlaying;
+    }
+  </script>
+</body>
+</html>
